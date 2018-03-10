@@ -7,28 +7,28 @@ using Xamarin.Forms;
 
 using ProjectSpur.Models;
 using ProjectSpur.Views;
+using System.Collections.Generic;
 
 namespace ProjectSpur.ViewModels
 {
     public class ItemsViewModel : BaseViewModel
     {
-        public ObservableCollection<Item> Items { get; set; }
+        public ObservableCollection<Friend> Friends { get; set; }
         public Command LoadItemsCommand { get; set; }
 
         public ItemsViewModel()
         {
             Title = "Browse";
-            Items = new ObservableCollection<Item>();
+            Friends = new ObservableCollection<Friend>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
 
-            MessagingCenter.Subscribe<NewItemPage, Item>(this, "AddItem", async (obj, item) =>
+            MessagingCenter.Subscribe<NewItemPage, Friend>(this, "AddItem", async (obj, friends) =>
             {
-                var _item = item as Item;
-                Items.Add(_item);
-                await DataStore.AddItemAsync(_item);
+                var _friends = friends as Friend;
+                Friends.Add(_friends);
+                await DataStore.AddItemAsync(_friends);
             });
         }
-
         async Task ExecuteLoadItemsCommand()
         {
             if (IsBusy)
@@ -38,11 +38,11 @@ namespace ProjectSpur.ViewModels
 
             try
             {
-                Items.Clear();
+                Friends.Clear();
                 var items = await DataStore.GetItemsAsync(true);
-                foreach (var item in items)
+                foreach (var friends in items)
                 {
-                    Items.Add(item);
+                    Friends.Add(friends);
                 }
             }
             catch (Exception ex)

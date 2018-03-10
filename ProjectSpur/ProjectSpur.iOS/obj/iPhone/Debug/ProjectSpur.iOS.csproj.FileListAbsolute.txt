@@ -1,0 +1,12 @@
+C:\Users\Prasanth\source\repos\ProjectSpur\ProjectSpur\ProjectSpur.iOS\obj\iPhone\Debug\ibtool\_BundleResourceWithLogicalName.items
+C:\Users\Prasanth\source\repos\ProjectSpur\ProjectSpur\ProjectSpur.iOS\obj\iPhone\Debug\actool\_PartialAppManifest.items
+C:\Users\Prasanth\source\repos\ProjectSpur\ProjectSpur\ProjectSpur.iOS\obj\iPhone\Debug\actool\_BundleResourceWithLogicalName.items
+C:\Users\Prasanth\source\repos\ProjectSpur\ProjectSpur\ProjectSpur.iOS\obj\iPhone\Debug\optimized\
+C:\Users\Prasanth\source\repos\ProjectSpur\ProjectSpur\ProjectSpur.iOS\obj\iPhone\Debug\ProjectSpur.iOS.csprojResolveAssemblyReference.cache
+C:\Users\Prasanth\source\repos\ProjectSpur\ProjectSpur\ProjectSpur.iOS\obj\iPhone\Debug\ProjectSpur.iOS.csproj.CoreCompileInputs.cache
+C:\Users\Prasanth\source\repos\ProjectSpur\ProjectSpur\ProjectSpur.iOS\obj\iPhone\Debug\ProjectSpur.iOS.App.xaml.g.cs
+C:\Users\Prasanth\source\repos\ProjectSpur\ProjectSpur\ProjectSpur.iOS\obj\iPhone\Debug\ProjectSpur.iOS.Views.MainPage.xaml.g.cs
+C:\Users\Prasanth\source\repos\ProjectSpur\ProjectSpur\ProjectSpur.iOS\obj\iPhone\Debug\ProjectSpur.iOS.Views.AboutPage.xaml.g.cs
+C:\Users\Prasanth\source\repos\ProjectSpur\ProjectSpur\ProjectSpur.iOS\obj\iPhone\Debug\ProjectSpur.iOS.Views.ItemDetailPage.xaml.g.cs
+C:\Users\Prasanth\source\repos\ProjectSpur\ProjectSpur\ProjectSpur.iOS\obj\iPhone\Debug\ProjectSpur.iOS.Views.ItemsPage.xaml.g.cs
+C:\Users\Prasanth\source\repos\ProjectSpur\ProjectSpur\ProjectSpur.iOS\obj\iPhone\Debug\ProjectSpur.iOS.Views.NewItemPage.xaml.g.cs

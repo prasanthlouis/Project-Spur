@@ -8,61 +8,60 @@ using ProjectSpur.Models;
 [assembly: Xamarin.Forms.Dependency(typeof(ProjectSpur.Services.MockDataStore))]
 namespace ProjectSpur.Services
 {
-    public class MockDataStore : IDataStore<Item>
+    public class MockDataStore : IDataStore<Friend>
     {
-        List<Item> items;
+        List<Friend> friends;
 
         public MockDataStore()
         {
-            items = new List<Item>();
-            var mockItems = new List<Item>
+            friends = new List<Friend>();
+            var mockItems = new List<Friend>
             {
-                new Item { Id = Guid.NewGuid().ToString(), Text = "First item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Second item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Third item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Fourth item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Fifth item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Sixth item", Description="This is an item description." },
+                new Friend()
+                {
+                    FirstName = "Albert",
+                    LastName = "George"
+                }
             };
 
-            foreach (var item in mockItems)
+            foreach (var friend in mockItems)
             {
-                items.Add(item);
+                friends.Add(friend);
             }
         }
 
-        public async Task<bool> AddItemAsync(Item item)
+        public async Task<bool> AddItemAsync(Friend friend)
         {
-            items.Add(item);
+            friends.Add(friend);
 
             return await Task.FromResult(true);
         }
 
-        public async Task<bool> UpdateItemAsync(Item item)
+        public async Task<bool> UpdateItemAsync(Friend friend)
         {
-            var _item = items.Where((Item arg) => arg.Id == item.Id).FirstOrDefault();
-            items.Remove(_item);
-            items.Add(item);
+            var _friends = friends.Where((Friend arg) => arg.Id == friend.Id).FirstOrDefault();
+            friends.Remove(_friends);
+            friends.Add(friend);
 
             return await Task.FromResult(true);
         }
 
-        public async Task<bool> DeleteItemAsync(Item item)
+        public async Task<bool> DeleteItemAsync(Friend friend)
         {
-            var _item = items.Where((Item arg) => arg.Id == item.Id).FirstOrDefault();
-            items.Remove(_item);
+            var _friends = friends.Where((Friend arg) => arg.Id == friend.Id).FirstOrDefault();
+            friends.Remove(_friends);
 
             return await Task.FromResult(true);
         }
 
-        public async Task<Item> GetItemAsync(string id)
+        public async Task<Friend> GetItemAsync(string id)
         {
-            return await Task.FromResult(items.FirstOrDefault(s => s.Id == id));
+            return await Task.FromResult(friends.FirstOrDefault(s => s.Id == id));
         }
 
-        public async Task<IEnumerable<Item>> GetItemsAsync(bool forceRefresh = false)
+        public async Task<IEnumerable<Friend>> GetItemsAsync(bool forceRefresh = false)
         {
-            return await Task.FromResult(items);
+            return await Task.FromResult(friends);
         }
     }
 }

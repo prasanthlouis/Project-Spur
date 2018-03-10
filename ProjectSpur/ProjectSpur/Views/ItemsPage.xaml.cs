@@ -46,7 +46,7 @@ namespace ProjectSpur.Views
         {
             base.OnAppearing();
 
-            if (viewModel.Items.Count == 0)
+            if (viewModel.Friends.Count == 0)
                 viewModel.LoadItemsCommand.Execute(null);
         }
     }

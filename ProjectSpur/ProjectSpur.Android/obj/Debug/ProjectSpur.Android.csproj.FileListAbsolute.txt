@@ -1,0 +1,8 @@
+C:\Users\Prasanth\source\repos\ProjectSpur\ProjectSpur\ProjectSpur.Android\obj\Debug\ProjectSpur.Android.csprojResolveAssemblyReference.cache
+C:\Users\Prasanth\source\repos\ProjectSpur\ProjectSpur\ProjectSpur.Android\obj\Debug\ProjectSpur.Android.csproj.CoreCompileInputs.cache
+C:\Users\Prasanth\source\repos\ProjectSpur\ProjectSpur\ProjectSpur.Android\obj\Debug\ProjectSpur.Droid.App.xaml.g.cs
+C:\Users\Prasanth\source\repos\ProjectSpur\ProjectSpur\ProjectSpur.Android\obj\Debug\ProjectSpur.Droid.Views.MainPage.xaml.g.cs
+C:\Users\Prasanth\source\repos\ProjectSpur\ProjectSpur\ProjectSpur.Android\obj\Debug\ProjectSpur.Droid.Views.AboutPage.xaml.g.cs
+C:\Users\Prasanth\source\repos\ProjectSpur\ProjectSpur\ProjectSpur.Android\obj\Debug\ProjectSpur.Droid.Views.ItemDetailPage.xaml.g.cs
+C:\Users\Prasanth\source\repos\ProjectSpur\ProjectSpur\ProjectSpur.Android\obj\Debug\ProjectSpur.Droid.Views.ItemsPage.xaml.g.cs
+C:\Users\Prasanth\source\repos\ProjectSpur\ProjectSpur\ProjectSpur.Android\obj\Debug\ProjectSpur.Droid.Views.NewItemPage.xaml.g.cs
