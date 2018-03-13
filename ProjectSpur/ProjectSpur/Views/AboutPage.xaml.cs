@@ -12,5 +12,9 @@ namespace ProjectSpur.Views
 		{
 			InitializeComponent ();
 		}
-	}
+        async void OpenContacts(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new NavigationPage(new NewItemPage()));
+        }
+    }
 }

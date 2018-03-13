@@ -1,4 +1,8 @@
-﻿using System;
+﻿using Contacts;
+using ContactsUI;
+using Foundation;
+using System;
+using System.Collections.Generic;
 using System.Windows.Input;
 
 using Xamarin.Forms;
@@ -11,7 +15,13 @@ namespace ProjectSpur.ViewModels
         {
             Title = "About";
 
-            OpenWebCommand = new Command(() => Device.OpenUri(new Uri("https://xamarin.com/platform")));
+            OpenWebCommand = new Command(() => ShowContacts());
+        }
+
+        private void ShowContacts()
+        {
+            var picker = new CNContactPickerViewController();
+            picker.DisplayedPropertyKeys = new NSString[] { CNContactKey.Nickname };
         }
 
         public ICommand OpenWebCommand { get; }
